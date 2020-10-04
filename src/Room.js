@@ -1,4 +1,5 @@
 import React, {useState} from 'react';
+import './shoaib.css';
 function Room (){
     let [isLit, setLit]=useState(false);
     function updateLit(){
@@ -6,8 +7,8 @@ function Room (){
         setLit(!isLit);
     }
     return(
-        <div>
-            This Room is {isLit? "lit":"dark"};
+        <div className={`room ${isLit ? "lit" : "dark"}`}>
+            {isLit? "lit":"dark"};
             <br/>
             <button onClick ={updateLit}>Change State</button>
         </div>
