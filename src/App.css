@@ -26,6 +26,8 @@ body {
 }
 
 h1 {
+  Background-color:black;
+  color:white;
   letter-spacing: 1px;
   margin: 0;
   text-align: center;
@@ -76,11 +78,13 @@ h4 {
 
 .money.plus {
   color: #b6960a;
+  background-color:green;
   font-weight: bold;
 }
 
 .money.minus {
   color: #2da3ad;
+  background-color:red;
   font-weight: bold;
 }
 

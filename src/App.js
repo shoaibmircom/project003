@@ -1,23 +1,30 @@
 import React from 'react';
+
+// Import CSS
 import './App.css';
-//import components
-import {Header} from './Components/Header';
-import {AccountSummary} from './Components/AccountSummary'
+
+// Import Components
+import { Header } from './Components/Header';
 import { Balance } from './Components/Balance';
-import {TransactionHistory} from './Components/TransactionHistory';
-import {GlobalProvider} from './Components/Context/GlobalState';
-import {AddTransaction} from './Components/AddTransaction';
-function App(){
+import { AccountSummary } from './Components/AccountSummary';
+import { TransactionHistory } from './Components/TransactionHistory';
+import { AddTransaction } from './Components/AddTransaction';
+
+// Import Provider
+import { GlobalProvider } from './Context/GlobalState';
+
+function App() {
   return (
-    <GlobalProvider>
-      <Header/>
-      <div classname="container">
-        <Balance/>
-        <AccountSummary/>
-        <TransactionHistory/>
-        <AddTransaction/>
-      </div>
-    </GlobalProvider>
+      <GlobalProvider>
+        <Header />
+        <div className="container">
+          <Balance />
+          <AccountSummary />
+          <TransactionHistory />
+          <AddTransaction />
+        </div>
+      </GlobalProvider>
   );
 }
+
 export default App;
